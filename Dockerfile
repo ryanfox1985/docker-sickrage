@@ -19,5 +19,5 @@ RUN cd /opt && git clone -b master https://github.com/SiCKRAGETV/SickRage.git
 # Clean up APT when done.
 RUN rm -rf /var/cache/apk/*
 
-EXPOSE 8080
+EXPOSE 8081
 ENTRYPOINT ["python", "SickBeard.py", "--pidfile=/run/sickrage.pid", "--datadir=/config"]
