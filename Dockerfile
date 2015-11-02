@@ -20,4 +20,4 @@ RUN cd /opt && git clone -b master https://github.com/SiCKRAGETV/SickRage.git
 RUN rm -rf /var/cache/apk/*
 
 EXPOSE 8080
-ENTRYPOINT ["python", "SickBeard.py", "--quiet", "--pidfile=/run/sickrage.pid", "--datadir=/config"]
+ENTRYPOINT ["python", "SickBeard.py", "--pidfile=/run/sickrage.pid", "--datadir=/config"]
