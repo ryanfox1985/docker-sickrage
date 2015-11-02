@@ -1,4 +1,4 @@
-FROM alpine
+FROM gliderlabs/alpine:3.2
 MAINTAINER ryanfox1985 <wolf.fox1985@gmail.com>
 
 ENV BUILD_PACKAGES git python-dev sqlite sqlite-dev build-base
